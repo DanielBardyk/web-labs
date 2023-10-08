@@ -1,0 +1,275 @@
+/* Обнулення */
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	background-color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #000;
+	font-size: calc(7px + 8 * (100vw / 1200));
+	line-height: 1.5;
+}
+h1 {
+	font-size: calc(11px + 19 * (100vw / 1200));
+	line-height: 1;
+	margin: 0;
+}
+h2 {
+	font-size: calc(9px + 11 * (100vw / 1200));
+	line-height: 1.5;
+	margin: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		font-size: calc(7px + 8 * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: calc(11px + 19 * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+@media (min-width: 1200px) {
+	h2 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	h2 {
+		font-size: calc(9px + 11 * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+/* ======================================= */
+
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.header {
+	background-color: rgb(168, 195, 255);
+	height: 22vh;
+	position: relative;
+	padding: 0px 40% 0 2%;
+}
+
+.header__content {
+	display: table;
+	float: left;
+	height: 100%;
+}
+
+.header__content p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header__title {
+	display: table;
+	float: right;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 3%;
+	margin: auto 0;
+	width: 27%;
+	height: 35%;
+	background-color: #fff;
+	padding: 0px 3%;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.header__title h1 {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header__list {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 1.2em;
+}
+
+.main {
+	height: 78vh;
+	background-color: rgb(175, 181, 195);
+	position: relative;
+}
+
+.main__left {
+	float: left;
+	width: 72%;
+}
+
+.left-content {
+	height: 65%;
+}
+
+.left-sidebar {
+	display: block;
+	float: left;
+	width: 37.5%;
+	height: 50.7vh;
+}
+
+.left-sidebar__menu {
+	background-color: #fcd7c2;
+	padding: 2% 7%;
+	display: table;
+	word-wrap: break-word;
+	overflow: hidden;
+	z-index: 2;
+	height: 50%;
+	width: 100%;
+}
+
+.left-sidebar__list {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.left-sidebar__content {
+	background-color: #bff3ba;
+	padding: 7% 7%;
+	display: table;
+	overflow: hidden;
+	word-wrap: break-word;
+	z-index: 2;
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
+.left-sidebar__content p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.left-sidebar__image {
+	position: absolute;
+	left: 7%;
+	top: 28%;
+}
+
+.left-sidebar__image img {
+	width: 30%;
+	height: 30%;
+}
+
+.content {
+	display: table;
+	background-color: #fff;
+	width: 62.5%;
+	position: relative;
+	overflow: hidden;
+	height: 50.7vh;
+}
+
+.content__text {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 5%;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.content__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.content__image img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.right-sidebar {
+	display: table;
+	float: right;
+	background-color: #fcd7c2;
+	height: 78vh;
+	width: 28%;
+	padding: 0 25px;
+}
+
+.right-sidebar__text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.footer {
+	display: table;
+	background-color: rgb(168, 195, 255);
+	height: 35%;
+	padding: 0 2.16%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 72%;
+}
+
+.footer__title {
+	position: absolute;
+	top: 0;
+	left: 3%;
+	width: 38%;
+	height: 29%;
+	background-color: #fff;
+	padding: 0px 5%;
+	display: table;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.footer__title h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.footer__content {
+	display: table-cell;
+	vertical-align: middle;
+	overflow: hidden;
+}
