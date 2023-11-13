@@ -12,7 +12,11 @@ function getCookie(key) {
 }
 
 function deleteCookie(key) {
-	document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/lab5;`;
+	const path1 = "/lab5";
+	const path2 = "/web-labs/lab5";
+
+	document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${path1};`;
+	document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${path2};`;
 }
 
 const keyCountMaxValue = 'countMaxValue';
