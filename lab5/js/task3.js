@@ -23,7 +23,7 @@ const keyCountMaxValue = 'countMaxValue';
 
 function generateFormInputs() {
 	const countMaxValueFromCookie = getCookie(keyCountMaxValue);
-	const isFormNeedToRender = true;
+	let isFormNeedToRender = true;
 
 	if(countMaxValueFromCookie) {
 		const result = window.confirm(`Maximal value count: ${countMaxValueFromCookie}. Do you want to clear cookies?`);
