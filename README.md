@@ -7,5 +7,7 @@ https://danielbardyk.github.io/web-labs/lab1/
 ## lab3
 1. https://danielbardyk.github.io/web-labs/lab3/post-version/
 2. https://danielbardyk.github.io/web-labs/lab3/mobile-version/
+## lab4
+https://danielbardyk.github.io/web-labs/lab4/
 ## lab5
 https://danielbardyk.github.io/web-labs/lab5/
