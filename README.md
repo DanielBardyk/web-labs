@@ -11,3 +11,5 @@ https://danielbardyk.github.io/web-labs/lab1/
 https://danielbardyk.github.io/web-labs/lab4/
 ## lab5
 https://danielbardyk.github.io/web-labs/lab5/
+## lab6
+http://test32167.42web.io/
